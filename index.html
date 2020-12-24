@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        #tab {
+            width: 600px;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<table id="tab" align="center" class="table table-hover table-bordered">
+    <tr>
+        <td colspan="5">
+            <!--text-center  文本居中 -->
+            <h1 class="text-center">关键词信息列表</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>编号</td>
+        <td>名字</td>
+        <td>类型</td>
+        <td>日期</td>
+        <td>操作</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="javascript:void(0)">删除</a></td>
+    </tr>
+</table>
+<p class="text-center">
+    <button class="btn btn-primary">添加关键词</button>
+</p>
+
+<script src="./js/jquery-3.5.1.js"></script>
+<script>
+    $(function () {
+        /* tr:gt(1) 索引2  第3行开始 */
+        $("tr:gt(1):even").css("background-color","#ccc");
+        $("a").click(function (){
+            let flag = confirm("确认删除吗?")
+            if (flag) {
+               $(this).parent().parent().remove();
+            }else {
+                alert("操作取消");
+            }
+        });
+    });
+</script>
+</body>
+</html>

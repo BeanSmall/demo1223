@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        #tab {
+            width: 600px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        /*  !important 样式最优先   */
+        tr:not(:last-child) td:nth-child(1){
+            padding-top: 17px !important;
+            background-color: #ced5bd;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="post">
+    <table id="tab" align="center" class="table table-hover table-bordered">
+        <tr>
+            <td colspan="5">
+                <!--text-center  文本居中 -->
+                <h1 class="text-center">添加关键词</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>关键词</td>
+            <td>
+                <input type="text" class="form-control" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>业务类型</td>
+            <td>
+                <input type="text" class="form-control" id="type">
+            </td>
+        </tr>
+        <tr>
+            <td>创建时间</td>
+            <td>
+                <input type="text" class="form-control" id="createTime">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <p class="text-center">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </p>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="./js/jquery-3.5.1.js"></script>
+<script>
+    $(function () {
+        $("#name").blur(function(){
+
+        });
+        $("[type]")
+        $("[type='text']")
+        $("[type^='te']")
+    });
+</script>
+</body>
+</html>
